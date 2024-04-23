@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Web</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">    
+</head>
+  <body>
+    <nav>
+      <button class="btnS" onclick="change('http://localhost:8080/SafeWeb/docs.html')">
+        Go to Documentation
+      </button>
+      
+      <h1 id="profile" onclick="change('http://localhost:8080/SafeWeb/login.html')" class="bi bi-person-circle"></h1>
+    </nav>
+    <h1>Safe Web</h1>
+    <form id="search" action="go.php" method="post">
+      <input type="text" name="txt" id="" placeholder="search" required />
+      <input type="submit" name="submit" value="&#128269; Search" />
+    </form>
+    <div class="container">
+      <b>&#10060; Direct Script XXS</b><br />
+      <b>&#10060; HTML Element XXS</b><br />
+      <b>&#10060; Direct Access to PHP</b><br />
+      <b>&#10060; SQL Injection</b><br />
+      <b>&#10060; DOS / DDOS Attack</b>
+    </div>
+    <button id="switch" onclick="change('http://localhost:8080/BugWeb')">
+      <i class="bi bi-bug-fill"></i>&nbsp;Switch to Bug Mode
+    </button>
+    <script>
+      function change(url) {
+        window.location.assign(url);
+      }
+    </script>
+    <script src="./res/jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

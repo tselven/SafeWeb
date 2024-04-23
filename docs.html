@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Documentation Bug Web</title>
+  </head>
+  <body onload="content('xxs',0)">
+    <nav>
+      <h1 class="nav-brand">Safe Web Documentation</h1>
+      <ul class="nav-list">
+        <li onclick="content('xxs',0)" class="nav-item">XXS</li>
+        <li onclick="content('DDOS',1)"  class="nav-item">DDOS</li>
+        <li onclick="content('sql_inject',2)" class="nav-item">SQL Injection</li>
+        <li onclick="content('php_direct',3)" class="nav-item">PHP Files Access</li>
+      </ul>
+    </nav>
+    <div id="outlet"></div>
+    <script src="./res/jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
